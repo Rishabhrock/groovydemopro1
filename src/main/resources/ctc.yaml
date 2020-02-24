@@ -1,6 +1,6 @@
-componemt:
-  -basic:
-  -bonus:
+component:
+  - basic
+  - bonus
 
 
 

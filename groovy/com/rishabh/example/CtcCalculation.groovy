@@ -1,6 +1,6 @@
 package com.rishabh.example
 
-import org.springframework.boot.json.YamlJsonParser
+
 import org.yaml.snakeyaml.Yaml
 
 
@@ -14,14 +14,26 @@ class CtcCalculation {
         InputStream inputStream = Customer.class.getResourceAsStream("/ctc.yaml")
         Object obj = yaml.load(inputStream);
 
+        obj.component.each
+                {
+                   map.put("basic",basicget(123))
+
+//                    obj.put("fdfd",54)
+//                    print obj
+                }
+        println map
+        println obj
+
+       // println obj.size()
         println basicget(123)
 
 
         map.put("basic",basicget(123))
+       // map.put("dfdf",basicget(123))
         println map
+        println map.getClass()
 
-
-     //   println CtcCalculation.ctccal(15464)
+      //  println CtcCalculation.ctccal(15464)
 
     }
 
